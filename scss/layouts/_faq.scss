@@ -47,12 +47,12 @@
          width: 30px;
          height: 31px;
 
-         background-image: url("/assets/images/icon-plus.svg");
+         background-image: url("../assets/images/icon-plus.svg");
       }
 
       input:checked + &-question::after {
          content: "";
-         background-image: url("/assets/images/icon-minus.svg");
+         background-image: url("../assets/images/icon-minus.svg");
       }
 
       &-answer {
