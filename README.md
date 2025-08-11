@@ -77,6 +77,38 @@ input:checked ~ .container {
 }
 ```
 
+2. Usage of details tag for accordion.
+
+```html
+<details class="faq__content" open>
+   <summary class="faq__content-question">
+      <h2>What is Frontend Mentor, and how will it help me?</h2>
+   </summary>
+   <p class="faq__content-answer">
+      Frontend Mentor offers realistic coding challenges to help developers
+      improve their frontend coding skills with projects in HTML, CSS, and
+      JavaScript. It's suitable for all levels and ideal for portfolio building.
+   </p>
+</details>
+```
+
+```css
+html {
+   interpolate-size: allow-keywords; /* Allow keywords like 'auto' for animation */
+}
+
+&::details-content {
+   block-size: 0;
+   transition: block-size var(--animation-speed) ease-in-out, content-visibility
+         var(--animation-speed); /* need to delay for animation visual upon closing */
+   transition-behavior: allow-discrete; /* allow content-visibility to animate */
+}
+
+&[open]::details-content {
+   block-size: auto;
+}
+```
+
 ### Useful resources
 
 -  [Animate height:auto - alternative](https://marcsamtleben.de/de/blog/animate-height-auto-with-pure-css) - The alternative solution is to animate the grid-template-rows from 0fr to 1fr.
