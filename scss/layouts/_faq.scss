@@ -60,7 +60,7 @@
       &-answer {
          display: grid;
          grid-template-rows: 0fr;
-         transition: all var(--animation-speed) linear;
+         transition: all var(--animation-speed) ease-in-out;
 
          p {
             padding-block-start: var(--spacing-md-1);
