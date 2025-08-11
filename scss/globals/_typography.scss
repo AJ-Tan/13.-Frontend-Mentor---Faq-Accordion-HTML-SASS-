@@ -1,0 +1,26 @@
+html {
+   font-size: 1rem;
+}
+
+body {
+   font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+   color: var(--color-primary-1);
+}
+
+h1 {
+   font-size: 2rem;
+}
+
+h2 {
+   font-size: 1rem;
+}
+
+p {
+   color: var(--color-neutral-3);
+   font-size: 0.85rem;
+   line-height: 1.5;
+}

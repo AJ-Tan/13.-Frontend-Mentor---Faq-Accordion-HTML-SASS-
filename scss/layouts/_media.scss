@@ -1,0 +1,25 @@
+@use "../utils/" as *;
+
+@include breakpoint("tablet-sm") {
+   .document__bg {
+      height: 16.5rem;
+   }
+
+   main {
+      padding-top: 8.5rem;
+   }
+
+   .faq {
+      padding: var(--spacing-md-2) var(--spacing-md-2) 0.5rem
+         var(--spacing-md-2);
+
+      &__header {
+         &-text {
+            font-size: 3rem;
+         }
+         &-image {
+            width: 2rem;
+         }
+      }
+   }
+}

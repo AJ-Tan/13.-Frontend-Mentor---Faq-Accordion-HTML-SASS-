@@ -1,0 +1,6 @@
+@use "../utils/" as *;
+
+main {
+   padding-top: 9rem;
+   padding-inline: var(--spacing-md-1);
+}
