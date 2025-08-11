@@ -44,8 +44,8 @@
          flex-shrink: 0;
 
          margin-left: var(--spacing-sm-2);
-         width: 30px;
-         height: 31px;
+         width: 1.875rem;
+         height: 1.9375rem;
 
          background-image: url("../assets/images/icon-plus.svg");
       }
@@ -61,13 +61,13 @@
          transition: all var(--animation-speed) linear;
 
          p {
-            padding-top: var(--spacing-md-1);
+            padding-block-start: var(--spacing-md-1);
             overflow: hidden;
          }
       }
 
       input:checked ~ &-answer {
-         padding-bottom: var(--spacing-md-1);
+         padding-block-end: var(--spacing-md-1);
          grid-template-rows: 1fr;
       }
    }
